@@ -17,7 +17,7 @@ Since this is the first lab, we'll keep it simple.  You will take the code from 
 
 1.  Set up your development environment.  For this Track you will need to be able to compile and run Java code.  We developed the examples using the using Java SE Development Kit 7. If you are using a more recent version, everything should still work.  If you are using an older version, you might find some incompatibilities.
 
-We recommend using an IDE like Eclipse that provides syntax-checking, auto-completion, and source code refactoring.  These features help you avoid errors, or find them quicky.  However, if you are preparing for a technical interview, remember that you will not have these tools during the interview, so you might also want to practice writing code without them.
+    We recommend using an IDE like Eclipse that provides syntax-checking, auto-completion, and source code refactoring.  These features help you avoid errors, or find them quicky.  However, if you are preparing for a technical interview, remember that you will not have these tools during the interview, so you might also want to practice writing code without them.
 
 [//]: # (TODO: More details here about compiling and running the examples.)
 
