@@ -3,7 +3,8 @@
  */
 package com.flatironschool.javacs;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
+import static org.hamcrest.CoreMatchers.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +24,7 @@ public class ListClientExampleTest {
 	public void testListClientExample() {
 		ListClientExample lce = new ListClientExample();
 		List list = lce.getList();
-		assertTrue(list instanceof ArrayList);
+		assertThat(list, instanceOf(ArrayList.class) );
 	}
 
 }
