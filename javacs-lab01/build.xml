@@ -67,7 +67,7 @@
             <classpath refid="JavaCS.classpath"/>
         </java>
     </target>
-    <target depends="ListClientExampleTest" name="test"/>
+    <target depends="build,ListClientExampleTest" name="test"/>
     <target name="ListClientExampleTest">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
