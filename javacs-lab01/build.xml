@@ -33,7 +33,6 @@
     <target name="clean">
         <delete dir="bin"/>
     </target>
-    <target depends="ListClientExample" name="test"/>
     <target depends="clean" name="cleanall"/>
     <target depends="build-subprojects,build-project" name="build"/>
     <target name="build-subprojects"/>
@@ -68,10 +67,12 @@
             <classpath refid="JavaCS.classpath"/>
         </java>
     </target>
+    <target depends="ListClientExampleTest" name="test"/>
     <target name="ListClientExampleTest">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
+            <formatter type="plain" usefile="false"/>
             <test name="com.flatironschool.javacs.ListClientExampleTest" todir="${junit.output.dir}"/>
             <classpath refid="JavaCS.classpath"/>
         </junit>
